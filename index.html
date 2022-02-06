@@ -10,7 +10,27 @@
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
 
-    <!-- First, create a form tag where our inputs will be nested -->
+    <form method="get" action="clientinformation.php">
+
+      <label for="fullname">Full Name</label>
+      <input type="text" required placeholder="Enter Name" name="fullname" id="fullname">
+
+      <label for="email">Email Address</label>
+      <input type="email" required placeholder="Enter Email" name="email" id="email">
+
+      <label for="phone">Phone</label>
+      <input type="tel" placeholder="Enter Telephone (optional)" name="phone" id="phone">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Enter Message"></textarea>  
+    
+      
+      <label for="terms">I have read and understood the companies terms and conditions.  I also understand the use of my private information in relation to this companies privacy policy.</label>
+      <input type="checkbox" name="terms" id="terms">
+     
+      <input type="submit">
+
+    </form>
 
 
       <!-- Add a label for 'fullname'-->
@@ -38,7 +58,6 @@
 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
 
 
       <!-- Add an input with the type set to 'submit' -->
